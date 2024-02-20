@@ -1,0 +1,7 @@
+<app-todo-form (addTodo)="createTodo($event)"></app-todo-form>
+
+<app-todo-list>
+    @for (todoItem of todoItems; track todoItem.id) {
+        <app-todo-item (editTodo)="editTodo($event)" (deleteTodo)="deleteTodo($event)" [todoItem]="todoItem"></app-todo-item>
+    }
+</app-todo-list>

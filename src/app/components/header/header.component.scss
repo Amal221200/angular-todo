@@ -1,0 +1,13 @@
+.text-logo {
+  font-size: clamp(2.3rem, 5vw, 3rem);
+}
+
+header {
+  display: flex;
+  padding-inline: 1.5rem;
+  margin-bottom: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: var(--border);
+  height: 80px;
+}
